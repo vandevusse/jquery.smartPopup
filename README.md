@@ -2,6 +2,13 @@
 
  Behavior based newsletter popup library.
 
+ This jQuery plugin allows for intelligent detection of user behavior before a popup is displayed. Plugin does not contain
+ code to display a plugin, rather just the logic around displaying them.  Supports the ability to check number of page views and time on the site before displaying a popup, hence preventing the "newsletter popup on first page load" problem.
+
+ Supports detection of utm_source in the url query string as to disable popups for newsletter recipients.
+
+ Supports the ability to snooze notifications for a period of time, for example if a user closed a popup, but the developer would like that popup to reoccur in a week.
+
  ## Installation
  The plugin requires jQuery 1.8 or higher.
 
