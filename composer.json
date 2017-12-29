@@ -1,0 +1,30 @@
+{
+    "name": "vandevusse/jquery.smartPopup",
+    "description": "Behavior based newsletter popup jQuery library",
+    "keywords": [
+        "browser","popup","smart","jquery","jquery-plugin"
+    ],
+    "homepage": "https://github.com/vandevusse/jquery.smartPopup",
+    "support": {
+        "issues": "https://github.com/vandevusse/jquery.smartPopup/issues",
+        "source": "https://github.com/vandevusse/jquery.smartPopup"
+    },
+    "authors": [
+        {
+            "name": "Ben van de Vusse",
+            "web": "https://github.com/vandevusse/"
+        }
+    ],
+    "require": {
+        "components/jquery": ">=1.8"
+    },
+    "extra": {
+        "component": {
+            "scripts": [
+                "jquery.smartPopup.js"
+            ],
+            "files": [
+                "jquery.smartPopup.min.js"
+            ]
+        }
+    }
