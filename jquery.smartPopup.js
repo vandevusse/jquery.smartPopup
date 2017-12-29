@@ -5,7 +5,7 @@
  * https://github.com/flesler/jquery.smartPopup
  * @projectDescription  Behavior based newsletter popup library.
  * @author Ben van de Vusse
- * @version 1.0.0
+ * @version 1.0.1
  */
 ;(function(factory) {
 	'use strict';
@@ -79,6 +79,10 @@
           user.snoozed = false;
           setUserCookie(user);
         }
+      },
+      register : function( ) {
+					user.registered = true;
+					setUserCookie(user);
       },
       snooze : function( ) {
           user.snoozed = (new Date()).getTime();

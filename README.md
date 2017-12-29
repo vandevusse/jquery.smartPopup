@@ -31,7 +31,7 @@
  * __$.smartPopup('status')__: Check the status of a user, returns a useful string (for debugging usually).
  * __$.smartPopup('canShow')__: Returns a true or false whether a notification should be shown.
  * __$.smartPopup('snooze')__: Disable a notification for the number of days as defined by __snoozeWaitInDays__.
-
+ * __$.smartPopup('register')__: Permanently disable a notification.
 
  ### Usage
 
