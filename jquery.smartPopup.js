@@ -161,6 +161,3 @@
 	return $smartPopup;
 
 });
-
-console.log($.smartPopup('status'));
-console.log($.smartPopup('canShow'));
