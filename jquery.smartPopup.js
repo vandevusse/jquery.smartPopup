@@ -84,6 +84,10 @@
 					user.registered = true;
 					setUserCookie(user);
       },
+      unregister : function( ) {
+					user.registered = false;
+					setUserCookie(user);
+      },
       snooze : function( ) {
           user.snoozed = (new Date()).getTime();
           setUserCookie(user);

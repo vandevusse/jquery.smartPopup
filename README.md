@@ -26,12 +26,13 @@
  * __utmSource__: Checks if a utm_source attribute is passed in the URL. Useful for blocking popups sourced from email notifications.
  * __snoozeWaitInDays__: If notification is snoozed (e.g. popup is closed for example), this is the amount of time until the notification can be shown again. By default, this is set to 7 days.
 
- ### _Methods__
+ ### _Methods_
 
  * __$.smartPopup('status')__: Check the status of a user, returns a useful string (for debugging usually).
  * __$.smartPopup('canShow')__: Returns a true or false whether a notification should be shown.
  * __$.smartPopup('snooze')__: Disable a notification for the number of days as defined by __snoozeWaitInDays__.
  * __$.smartPopup('register')__: Permanently disable a notification.
+ * __$.smartPopup('unregister')__: Undo the register action, used for unsubscribes.
 
  ### Usage
 
