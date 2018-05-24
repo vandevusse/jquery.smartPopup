@@ -1,6 +1,6 @@
 {
   "name": "jquery.smartPopup",
-  "version": "1.0.1",
+  "version": "1.3.0",
   "description": "Behavior based newsletter popup jQuery library",
   "main": "jquery.smartPopup.js",
   "license": "MIT",

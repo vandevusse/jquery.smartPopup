@@ -88,6 +88,9 @@
 					user.registered = false;
 					setUserCookie(user);
       },
+      isRegistered : function( ) {
+					return user.registered;
+      },
       snooze : function( ) {
           user.snoozed = (new Date()).getTime();
           setUserCookie(user);
