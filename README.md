@@ -33,6 +33,7 @@
  * __$.smartPopup('snooze')__: Disable a notification for the number of days as defined by __snoozeWaitInDays__.
  * __$.smartPopup('register')__: Permanently disable a notification.
  * __$.smartPopup('unregister')__: Undo the register action, used for unsubscribes.
+ * __$.smartPopup('isRegistered')__: Simply returns true if the user is known to be registered.
 
  ### Usage
 
