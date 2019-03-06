@@ -2,10 +2,10 @@
  * jQuery.smartPopup
  * Copyright (c) 2018 Ben van de Vusse - ben ○ tenzura • com | http://tenzura.com
  * Licensed under MIT
- * https://github.com/flesler/jquery.smartPopup
+ * https://github.com/vandevusse/jquery.smartPopup
  * @projectDescription  Behavior based newsletter popup library.
  * @author Ben van de Vusse
- * @version 1.0.1
+ * @version 1.0.2
  */
 ;(function(factory) {
 	'use strict';
@@ -66,7 +66,7 @@
 
         // test if user has a known utm source, and save user as registered if so
         if(settings.utmSource) {
-           var utmRegex = new RegExp('utm_source='+settings.utmSource.toLowerCase());
+           var utmRegex = new RegExp('utm_source='+escapeRegExp(settings.utmSource.toLowerCase()));
            if(utmRegex.test(location.search.toLowerCase())) {
              user.registered = true;
              setUserCookie(user);
@@ -118,7 +118,7 @@
       }
   };
 
-	$.fn.smartPopup = function(methodOrOptions) {
+  $.fn.smartPopup = function(methodOrOptions) {
     if ( methods[methodOrOptions] ) {
         return methods[ methodOrOptions ].apply( this, Array.prototype.slice.call( arguments, 1 ));
     } else if ( typeof methodOrOptions === 'object' || ! methodOrOptions ) {
@@ -128,7 +128,11 @@
         $.error( 'Method ' +  methodOrOptions + ' does not exist on jQuery.smartPopup' );
     }
 
-	};
+  };
+  
+  function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+  }
 
   function getSecondsSinceInitialVisit() {
     if(!user || !user.initAt) return 0;
